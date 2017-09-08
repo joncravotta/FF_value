@@ -1,5 +1,5 @@
 require 'csv'
-require_relative './defense_weighted.rb'
+require_relative './weight_player_against_defense.rb'
 require_relative './parser.rb'
 require_relative './player_sorter.rb'
 require_relative './player_weighted.rb'

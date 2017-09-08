@@ -1,5 +1,5 @@
 # weights a single player against opponent defense
-class DefenseWeighted
+class WeightPlayerAgainstDefense
   def initialize(defenses)
     @defenses = defenses
   end

@@ -6,7 +6,7 @@ WeightedPlayer = Struct.new(:info, :name, :weight)
 class PlayersWeighted
   def initialize(all_players)
     @players = all_players
-    @defense_weighted = DefenseWeighted.new(all_players.dst)
+    @defense_weighted = WeightPlayerAgainstDefense.new(all_players.dst)
   end
 
   def weight_and_write_to_file
