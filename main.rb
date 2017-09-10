@@ -6,7 +6,7 @@ require_relative './player_weighted.rb'
 
 class Main
   def initialize
-    @csv_file = "2017_week_1.csv"
+    @csv_file = "2017_week_1_weekend.csv"
   end
 
   def execute

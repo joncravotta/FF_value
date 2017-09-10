@@ -32,9 +32,11 @@ class PlayersWeighted
     weighted = []
 
     players.each do |player|
-      w = @defense_weighted.weight(player)
-      wp = WeightedPlayer.new(player, player.name, w)
-      weighted.push(wp)
+      if player.game_info != "Postponed"
+        w = @defense_weighted.weight(player)
+        wp = WeightedPlayer.new(player, player.name, w)
+        weighted.push(wp)
+      end
     end
 
     weighted
